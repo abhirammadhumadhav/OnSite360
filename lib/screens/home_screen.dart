@@ -86,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 10),
             Expanded(
               child: filteredProjects.isEmpty
-                  ? const Center(child: Text('No projects found.'))
+                  ? const Center(child: Text('No projects found.',style: TextStyle(color: Colors.white),))
                   : ListView.builder(
                       itemCount: filteredProjects.length,
                       itemBuilder: (context, index) {
