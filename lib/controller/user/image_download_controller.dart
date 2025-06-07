@@ -60,7 +60,14 @@ class ImageDownloadController extends GetxController {
         },
       );
 
-      Get.snackbar("Download Complete", "Photo saved to:\n$filePath");
+      Get.snackbar(
+        "Download Complete", "Photo saved to:\n$filePath",
+         backgroundColor: Colors.blue.shade50,
+        colorText: Colors.blue.shade800,
+        snackPosition: SnackPosition.TOP,
+        duration: Duration(seconds: 2),
+
+        );
     } catch (e) {
       Get.snackbar("Download Failed", e.toString());
     } finally {
